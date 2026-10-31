@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.logs{
+    background: "#fff";
+    display : flex;
+    flex-direction:column;
+    margin: 25px;
+}
+.logs input{
+    margin: 10px;
+    padding: 18px;
+    border:none;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+button{
+    margin-top: 25px;
+    padding: 20px;
+    box-shadow: 0.3 0.3 0.15 gray;
+    border: none;
+    background: darkgreen;
+    color: #fff;
+    font-size: 20px;
+}
+.logs input::placeholder{
+    color: #fff;
+    font-size: 22px;
+}
+fieldset{
+    background: rgb(196, 209, 193);
+    display: flex;
+    justify-content: center;
+
+}
+
+
+button:hover{
+    color: rgb(221, 221, 216);
+    background: #95c70b;
+    transition: 0.4s;
+}
+</style>
+<body>
+    <fieldset>
+    <div class="logs">
+
+        <h1>login</h1>
+        <input type="text"placeholder="username"  id="username">
+        <br>
+                <input type="password"placeholder="password"  id="password">
+        <button onclick="sumUp()">Sign In</button>
+        <p id="logs"></p>
+         </div>
+        </feildset>
+
+ <script>
+function sumUp(){    
+const username = document.getElementById("username").value;
+const password = document.getElementById("password").value;
+const logs = document.getElementById("logs");
+if (password==="1234"){
+    logs.innerHTML = "welcome back " + username;
+}
+    if(sum === 10){
+        logs.innerHtml = "hello";
+    }
+    else{
+        logs.innerHtml = "error";
+    }
+}
+</script>
+</body>
+</html>
